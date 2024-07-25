@@ -50,6 +50,6 @@ async def console_listener(bot: commands.Bot):
             else:
                 print("No message provided for msg command.")
         elif command == "version":
-            print("Currently running John Bot 0.1.5")
+            print("Currently running John Bot 0.3")
         else:
             print(f"Unknown command: {command}")

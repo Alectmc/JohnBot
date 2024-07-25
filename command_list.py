@@ -1,3 +1,6 @@
+'''
+!!!>>> '!' COMMANDS ARE NO LONGER SUPPORTED. THIS FILE IS FOR DOCUMENTATION PURPOSES ONLY <<<!!!
+
 import random
 from discord import Client
 
@@ -48,3 +51,4 @@ def get_command(user_input: str, client: Client) -> str:
         return ("What's new in 0.1.5:\n\n-Fixed a bug where the /feedback command did not exist.")
     else:
         return "I'm sorry, I do not know that command!"
+'''

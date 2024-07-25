@@ -1,6 +1,6 @@
 from discord import Message
 from discord.ext import commands
-from command_list import get_command
+#from command_list import get_command
 from responses import get_response
 from dotenv import load_dotenv
 import os
@@ -17,13 +17,7 @@ async def send_message(message: Message, user_message: str, bot: commands.Bot) -
         logging.warning("Message is empty... check intents and debug")
 
     if user_message[0] == '!':
-        response = get_command(user_message, bot)
-        if response.startswith("FEEDBACK: "):
-            await send_feedback(response, bot)
-            await message.channel.send("Feedback received, thank you!")
-        else:
-            await message.channel.send(response)
-        return
+        await message.channel.send("'!' commands have been depriciated and are no longer functional. Please use '/' commands instead.")
 
     try:
         response = get_response(user_message)
